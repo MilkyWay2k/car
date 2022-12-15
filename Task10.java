@@ -10,8 +10,21 @@ public class Task10 {
 class Car {
 	String brand, model;
 	int amountOfFuel;
+
+	Car()
+	{
+		brand = "";
+		model = "";
+		amountOfFuel = 0;
+		
+	}
 	
-	
+	Car(String brand1, String model1, int amountOfFuel1) 
+	{	
+		brand = brand1;
+		model = model1;
+		amountOfFuel = amountOfFuel1;
+	}
 	
 	public void brake ()
 	{
@@ -36,4 +49,5 @@ class Car {
 		
 	}
 }
+
 
