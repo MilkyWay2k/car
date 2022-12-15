@@ -1,15 +1,18 @@
+
 public class Task10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		 
 		
-
+		Car car = new Car("Opel","Astra",50);
 	}
+
 }
 
 class Car {
-	String brand, model;
-	int amountOfFuel;
+	private String brand, model;
+	private int amountOfFuel;
 
 	Car()
 	{
@@ -24,6 +27,7 @@ class Car {
 		brand = brand1;
 		model = model1;
 		amountOfFuel = amountOfFuel1;
+		printData();
 	}
 	
 	public void brake ()
@@ -48,6 +52,14 @@ class Car {
 		System.out.println("Fuel: " + amountOfFuel);
 		
 	}
+	
+	public String getModel() 
+	{
+		return model;
+	}
+	
+	public void setModel(String model)
+	{
+		this.model = model;
+	}
 }
-
-
